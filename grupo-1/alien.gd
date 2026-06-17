@@ -38,5 +38,5 @@ func disparar():
 	var misilescena = misil.instantiate()
 	misilescena.global_position = spawn_point.global_position
 	get_tree().current_scene.add_child(misilescena)	
-	print("para ver cambios de git")
+	print("para ver cambios de gisadadsat")
 	
