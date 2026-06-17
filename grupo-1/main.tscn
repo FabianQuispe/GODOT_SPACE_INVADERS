@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c4ixx6ty3iwe8"]
+
+[ext_resource type="PackedScene" uid="uid://r2gheikdmsok" path="res://escenas/nave.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://buif4fgegi06h" path="res://escenas/grupo_alien.tscn" id="3_h2yge"]
+
+[node name="Main" type="Node" unique_id=829755821]
+
+[node name="Nave" parent="." unique_id=512807999 instance=ExtResource("1_0xm2m")]
+position = Vector2(290, 716)
+
+[node name="GrupoAlien" parent="." unique_id=534938170 instance=ExtResource("3_h2yge")]

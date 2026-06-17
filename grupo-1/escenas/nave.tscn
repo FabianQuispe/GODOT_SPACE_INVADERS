@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://r2gheikdmsok"]
+
+[ext_resource type="Script" uid="uid://bccdhtqt6d7x3" path="res://nave.gd" id="1_m6juu"]
+[ext_resource type="Texture2D" uid="uid://cy72k7nltmm30" path="res://sprites/jugador.png" id="2_c577p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+size = Vector2(16.75, 6.5)
+
+[node name="Nave" type="CharacterBody2D" unique_id=512807999]
+scale = Vector2(4, 4)
+collision_mask = 2
+script = ExtResource("1_m6juu")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1731303167]
+texture = ExtResource("2_c577p")
+hframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1973158633]
+shape = SubResource("RectangleShape2D_0xm2m")

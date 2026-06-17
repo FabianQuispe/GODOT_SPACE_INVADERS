@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://buif4fgegi06h"]
+
+[ext_resource type="Script" uid="uid://txo43pvashcl" path="res://grupo_alien.gd" id="1_7h61r"]
+
+[node name="GrupoAliens" type="Node" unique_id=534938170]
+script = ExtResource("1_7h61r")
+
+[node name="TimerDescender" type="Timer" parent="." unique_id=445194939]
+wait_time = 5.0
+autostart = true
+
+[node name="TimerDisparar" type="Timer" parent="." unique_id=812636401]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="TimerDescender" to="." method="_on_timer_descender_timeout"]
+[connection signal="timeout" from="TimerDisparar" to="." method="_on_timer_disparar_timeout"]
